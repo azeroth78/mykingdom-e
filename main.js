@@ -1,8 +1,12 @@
 
 const bodyTag = document.getElementsByTagName('body')[0];
 const refreshPage = document.querySelectorAll('.refresh-page');
-// const loadingPage = document.getElementsByClassName('loader spinner');
-const loadingPage = document.querySelector('.loader.spinner')
+const loadingPage = document.querySelector('.loader.spinner');
+
+
+
+
+
 
 
 refreshPage.forEach( item => {
@@ -22,7 +26,6 @@ refreshPage.forEach( item => {
 
     })
 });
-
 
 
 

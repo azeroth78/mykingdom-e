@@ -37,20 +37,25 @@
 
          <form>
 
-            <div class="Icon-inside">
+            <div class="Icon-inside ">
 
               <input type="text" placeholder="USERNAME">
-              <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+              <i class="fa fa-user fa-lg fa-fw " id="first-icon" aria-hidden="true"></i>
             </div>
 
-            <div class="Icon-inside">
+            <div class="Icon-inside ">
               <input type="password" placeholder="PASSWORD">
-              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <i class="fa-solid fa-lock"  id="second-icon" aria-hidden="true"></i>
             </div>
 
-            <div class="Icon-inside">
-              <input type="text" placeholder="Enter Secure Token ID">
-              <i class="fa-solid fa-lock-open" aria-hidden="true"></i>
+            <div class="Icon-inside ">
+              <input type="tel"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+              pattern="[0-9]+"
+               maxlength="6" id="input-length" placeholder="Secure Token ID">
+
+              <img src="tok.png"  alt="tok" class="tok-img" />
+              <!-- <i class="fa-solid fa-lock-open" aria-hidden="true"></i> -->
               
             </div>
 

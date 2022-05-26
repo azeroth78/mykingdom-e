@@ -101,7 +101,14 @@ form {
     transition: 0.5s ease-out;
 }
 
-  /*  */
+  /* tok image  */
+
+  .tok-img { 
+      width: 47px;
+      position: absolute;
+      top: 15px;
+      left: 6px;
+  }
 
   /*  */
 
@@ -122,17 +129,34 @@ form {
        width: 1px;
        background-color: rgb(139, 139, 139);
        position: absolute;
-       left: 37px;
+       left: 47px;
        top: 16px;
    }
    
    .Icon-inside i {
+     font-size: 25px; 
     position:absolute;
-    left:0;
-    top:20px;
-    padding:10px 10px;
+    left:7px;
+    top:17px;
+    padding:10px 10px ;
     color: rgb(139, 139, 139);
    }
+
+ #first-icon {
+     font-size: 30px;
+     position: absolute;
+     top: 27px;
+     left: 5px;
+ }
+
+ #second-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+
+
 
 
 /* ---------code over--------------- */
@@ -167,10 +191,10 @@ form {
   }
 
   .sign-in-button > a  {
-      font-size: 23px;
+      font-size: 17px;
       color: gray;
       background: yellow;
-      padding: 10px;
+      padding: 8px;
       border-radius: 35px;
       text-decoration: none;
   }
@@ -180,13 +204,15 @@ form {
   }
 
   .sign-in-button > a:nth-child(1) {
-     margin-left: 100px;
+     margin-left: 160px;
 
 }
 
 .sign-in-button > a:nth-child(2) {
-    margin-right: 15px;
+    margin-right: 13px;
     margin-top: 10px;
+    justify-content: end;
+   
 }
 
 
@@ -244,7 +270,8 @@ form {
 
   @media screen and (max-width : 420px) {
     .sign-in-button {
-        left: 290px;  
+        font-size: 7px;
+        left: 250px;  
     }
 }
 
@@ -301,7 +328,7 @@ form {
 
 @media (min-width:2000px) and (max-width : 2200px) {
     .sign-in-button {
-        left: 950px;  
+        left: 1000px;  
     }
 }
 
